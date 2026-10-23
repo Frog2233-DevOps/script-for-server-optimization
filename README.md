@@ -13,7 +13,7 @@
 От root на свежем сервере (`sudo -i`, затем):
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/Frog2233-DevOps/script-for-server-optimization?tab=readme-ov-file/main/bootstrap.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Frog2233-DevOps/script-for-server-optimization/main/bootstrap.sh)
 ```
 
 Скрипт сам спросит публичный ключ в терминале.
@@ -21,13 +21,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/Frog2233-DevOps/script-for-s
 **Вариант без вопросов** (передать ключ сразу):
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/Frog2233-DevOps/script-for-server-optimization?tab=readme-ov-file/main/bootstrap.sh)   --key "ssh-ed25519 AAAA... ваш_публичный_ключ"
+bash <(curl -fsSL https://raw.githubusercontent.com/Frog2233-DevOps/script-for-server-optimization/main/bootstrap.sh)   --key "ssh-ed25519 AAAA... ваш_публичный_ключ"
 ```
 
 или взять ключи с GitHub-аккаунта:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/Frog2233-DevOps/script-for-server-optimization?tab=readme-ov-file/main/bootstrap.sh) --github ВАШ_НИК
+bash <(curl -fsSL https://raw.githubusercontent.com/Frog2233-DevOps/script-for-server-optimization/main/bootstrap.sh) --github ВАШ_НИК
 ```
 
 > ⚠️ **Перед запуском убедись, что есть доступ к консоли/rescue-режиму провайдера.**
