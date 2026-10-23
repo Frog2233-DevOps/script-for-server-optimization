@@ -13,7 +13,7 @@
 От root на свежем сервере (`sudo -i`, затем):
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/ВАШ_ЛОГИН/ВАШ_РЕПОЗИТОРИЙ/main/bootstrap.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Frog2233-DevOps/script-for-server-optimization?tab=readme-ov-file/main/bootstrap.sh)
 ```
 
 Скрипт сам спросит публичный ключ в терминале.
@@ -21,13 +21,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/ВАШ_ЛОГИН/ВАШ_Р�
 **Вариант без вопросов** (передать ключ сразу):
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/ВАШ_ЛОГИН/ВАШ_РЕПОЗИТОРИЙ/main/bootstrap.sh)   --key "ssh-ed25519 AAAA... ваш_публичный_ключ"
+bash <(curl -fsSL https://raw.githubusercontent.com/Frog2233-DevOps/script-for-server-optimization?tab=readme-ov-file/main/bootstrap.sh)   --key "ssh-ed25519 AAAA... ваш_публичный_ключ"
 ```
 
 или взять ключи с GitHub-аккаунта:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/ВАШ_ЛОГИН/ВАШ_РЕПОЗИТОРИЙ/main/bootstrap.sh) --github ВАШ_НИК
+bash <(curl -fsSL https://raw.githubusercontent.com/Frog2233-DevOps/script-for-server-optimization?tab=readme-ov-file/main/bootstrap.sh) --github ВАШ_НИК
 ```
 
 > ⚠️ **Перед запуском убедись, что есть доступ к консоли/rescue-режиму провайдера.**
@@ -43,7 +43,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/ВАШ_ЛОГИН/ВАШ_Р�
 ```bash
 # 1. Посмотри хеш коммита на GitHub (кнопка <> Code → копируй полный SHA)
 # 2. Сверь контрольную сумму файла с тем, что в релизе репозитория
-curl -fsSL https://raw.githubusercontent.com/ВАШ_ЛОГИН/ВАШ_РЕПОЗИТОРИЙ/<ПОЛНЫЙ_SHA_КОММИТА>/bootstrap.sh -o bootstrap.sh
+curl -fsSL https://raw.githubusercontent.com/Frog2233-DevOps/script-for-server-optimization?tab=readme-ov-file/<ПОЛНЫЙ_SHA_КОММИТА>/bootstrap.sh -o bootstrap.sh
 echo "adee7d3951542eab27003d0d5f7fe7fc031ab4af6894d5bdaa038e64bb8a5a79  bootstrap.sh" | sha256sum -c
 # 3. Только после OK — запуск
 bash bootstrap.sh
